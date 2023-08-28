@@ -1,0 +1,131 @@
+.home{
+  background: linear-gradient(to bottom, transparent, rgba(1, 0, 0, 0.8));
+  background: url('https://uploads-ssl.webflow.com/62bec2ad58883c0d7237610e/62fb762e056b691e52701d63_mars.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+  color: white;
+}
+.body-main{
+  display: flex;
+  flex-direction: row;
+}
+.body-right{
+  width: 100vw;
+  position: relative;
+  left: -20%;
+}
+.body-right>.intro{
+  position: relative;
+  top: 40%;
+  width: 50px;
+  left: 5%;
+
+}
+.body-right>.dynamic-text{
+  position: relative;
+  top: 40%;
+  width: 500px;
+ 
+  left: 5%;
+
+}
+.dynamic-text>h3{
+  font-size: 40px;
+  position: absolute;
+  width: max-content;
+  
+ 
+  
+}
+.create{
+  color: blue;
+}
+.develop{
+  color: palevioletred;
+}
+.letme{
+  position: absolute;
+  top: 200px;
+  font-size: 20px;
+  width: max-content;
+}
+.body-right>.let-me{
+  position: relative;
+  top: 60%;
+  width: max-content;
+  font-size: 20px;
+  
+  left: 5%;
+
+}
+.body-left{
+  position: relative;
+  z-index: 10;
+  left: 10%;
+  
+}
+.body-left>img{
+  width: fit-content;
+  height: fit-content;
+}
+
+.typewriter-text{
+  font-size: 100px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid white; /* This creates the cursor effect */
+  animation: typing 3s steps(30, end);
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+.glowing {
+  border: 2px solid transparent;
+  animation: glowing 2s infinite;
+  width: 25px;
+}
+
+@keyframes glowing {
+  0% {
+    border-color: #a371f7;
+  }
+  50% {
+    border-color: #56d364;
+  }
+  100% {
+    border-color: #a371f7;
+  }
+}
+.glow {
+  animation: glowingAtEnd 1s infinite;
+}
+
+@keyframes glowingAtEnd {
+  0%, 100% {
+    border-color: #a371f7;
+    box-shadow: 0 0 10px #a371f7;
+  }
+  50% {
+    border-color: #56d364;
+    box-shadow: 0 0 20px #56d364;
+  }
+}
+.cursor {
+  display: inline-block;
+  animation: blinkCursor 0.8ss infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

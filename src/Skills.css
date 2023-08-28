@@ -1,0 +1,145 @@
+.skills{
+  background-color: #000;
+  color: white;
+  background: url('https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+.line{
+    height: 600px;
+    width: 4px;
+    background: linear-gradient(#d2a8ff, #a371f7 10%, #196c2e 70%, #2ea043 80%, #56d364);
+    position: relative;
+    left: 40%;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.skills-body-right{
+  width: 1000px;
+  position: relative;
+  left: 110px;
+  overflow: hidden;
+}
+.skills-body-left{
+  position: relative;
+  z-index: 10;
+  left: 10%;
+  
+}
+.skills-body-main{
+  display: flex;
+  flex-direction: row;
+}
+.line.thunder {
+    /* Final state of the line */
+    opacity: 1;
+    transform: translateY(0);
+}
+.glowing {
+    
+    animation: glowing 2s infinite;
+    width: 25px;
+}
+  
+@keyframes glowing {
+    0% {
+      border-color: #a371f7;
+    }
+    50% {
+      border-color: #56d364;
+    }
+    100% {
+      border-color: #a371f7;
+    }
+}
+.glow {
+    animation: glowingAtEnd 1s infinite;
+}
+  
+  @keyframes glowingAtEnd {
+    0%, 100% {
+      border-color: #a371f7;
+      box-shadow: 0 0 10px #a371f7;
+    }
+    50% {
+      border-color: #56d364;
+      box-shadow: 0 0 20px #56d364;
+    }
+}
+.project-card{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #196c2e;
+  left: 100px;
+  background: url(./Photos/Skypler.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+.project-card1{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: yellow;
+  left: 350px;
+  background: url(./Photos/netflix.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+    
+}
+.project-card2{
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #196c2e;
+  left: 600px;
+  background: url(./Photos/amazon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+.project-card,
+.project-card1,
+.project-card2 {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.project-card.slide-in,
+.project-card1.slide-in,
+.project-card2.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+.project-card:hover,
+.project-card1:hover,
+.project-card2:hover {
+  transform: translateZ(20px) rotateX(10deg) rotateY(10deg);
+  box-shadow: 0px 10px 20px rgba(248, 238, 41, 0.3);
+}
+.link{
+  color: white;
+  position: relative;
+  top: 200px;
+  left: -200px;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-animation {
+  animation: slideIn 0.5s ease;
+}
